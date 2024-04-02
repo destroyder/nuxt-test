@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+  <number />
+  <bingoCard />
+  <bingoButton />
 </template>

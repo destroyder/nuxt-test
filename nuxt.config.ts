@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
+  app: {
+    baseURL: "/",
+  },
   devtools: { enabled: true },
   modules: ["@pinia/nuxt", "@nuxtjs/storybook"],
   storybook: {

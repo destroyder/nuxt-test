@@ -1,6 +1,6 @@
 export const useBingoStore = defineStore("bingoButton", () => {
-  const stateBingoArray = ref([]);
-  let stateBingoNumber = ref();
+  const stateBingoArray = ref<number[]>([]);
+  const stateBingoNumber = ref<number>(0);
 
   // stateBingoに無い、ビンゴのrandomな番号を生成する
   function generateRandomNumber() {

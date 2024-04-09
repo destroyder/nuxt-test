@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const bingoButton = useBingoStore();
-const bingoCardArrayStore = useBingoCard();
 const bingoHitStore = useBingoHit();
 </script>
 

@@ -14,5 +14,11 @@ export const useBingoStore = defineStore("bingoButton", () => {
     stateBingoArray.value.push(stateBingoNumber.value);
   }
 
-  return { stateBingoArray, stateBingoNumber, generateRandomNumber };
+  // stateBingoArrayをリセットする
+  function resetBingoArray() {
+    stateBingoArray.value = [];
+    stateBingoNumber.value = 0;
+  }
+
+  return { stateBingoArray, stateBingoNumber, generateRandomNumber, resetBingoArray };
 });

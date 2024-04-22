@@ -1,8 +1,20 @@
+<script setup lang="ts">
+import ResetButton from "./components/ResetButton.vue";
+
+const renderKey = ref(0);
+function handleMyEvent(resetNum: number) {
+  renderKey.value = resetNum++;
+}
+
+//@my-event="handleMyEvent"
+</script>
+
 <template>
   <div class="wrapper">
-    <bingoNumber />
-    <bingoCard />
-    <bingoButton />
+    <bingoNumber :key="renderKey" />
+    <bingoCard :key="renderKey" />
+    <bingoButton :key="renderKey" />
+    <resetButton @resetNumber="(resetNum: number) => handleMyEvent(resetNum)" />
   </div>
 </template>
 

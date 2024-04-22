@@ -9,7 +9,7 @@ const bingoButton = useBingoStore();
 <template>
   <table class="bingoCard">
     <tbody>
-      <tr v-for="(row, rowIndex) in 5" :key="rowIndex">
+      <tr v-for="(row, rowIndex) in 5" :key="row">
         <td
           v-for="(bingo, index) in bingoCardArray.slice(rowIndex * 5, (rowIndex + 1) * 5)"
           :class="{ isHit: bingoButton.stateBingoArray.includes(bingo) }"

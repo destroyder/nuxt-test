@@ -1,3 +1,4 @@
+// Bingoがあたりかどうかを判定する関数を提供する
 export const useBingoHit = defineStore("bingoHit", () => {
   const bingoButton = useBingoStore();
   const bingoCardArrayStore = useBingoCard();
